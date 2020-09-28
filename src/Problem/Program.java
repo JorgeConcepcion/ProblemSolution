@@ -70,24 +70,44 @@ public class Program {
     theWorld.printWorld();
   }
 
+  public class City {
+    public City(String name, long population) {
+
+    }
+  }
 
 
+  public class District{
+    public District(String name, long population) {
+
+    }
+  }
 
 
+  public class State {
+    public State(String name, StateEntities... entities) {
+
+    }
+  }
 
 
+  public class Country {
+    public Country(String name, CountryEntities... entities) {
+    }
+  }
 
 
+  public class World {
+    public World(Country... entities) {
+    }
 
+    public long getPopulation() {
+      //TODO: Implement
+    }
 
-
-
-
-
-
-
-
-
-
-
+    public void printWorld() {
+      //TODO: Implement
+      System.out.println("\n" + worldEntitiesNames);
+    }
+  }
 }
